@@ -90,6 +90,27 @@
         font-size: 48px;
         position: relative;
         z-index: 1;
+        transform-style: preserve-3d;
+        animation: float3d 3s ease-in-out infinite;
+        box-shadow: 
+          0 10px 30px rgba(0, 0, 0, 0.3),
+          0 20px 60px rgba(0, 0, 0, 0.2),
+          inset 0 -5px 10px rgba(0, 0, 0, 0.1);
+      }
+
+      @keyframes float3d {
+        0%, 100% {
+          transform: translateY(0px) rotateX(0deg) rotateY(0deg);
+        }
+        25% {
+          transform: translateY(-10px) rotateX(5deg) rotateY(-5deg);
+        }
+        50% {
+          transform: translateY(0px) rotateX(0deg) rotateY(5deg);
+        }
+        75% {
+          transform: translateY(-10px) rotateX(-5deg) rotateY(0deg);
+        }
       }
 
       .name {
