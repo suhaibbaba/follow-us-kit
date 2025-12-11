@@ -13,7 +13,7 @@
 
       body {
         font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        background: linear-gradient(135deg, #235c63 0%, #235c63 100%);
         min-height: 100vh;
         display: flex;
         justify-content: center;
@@ -44,7 +44,7 @@
       }
 
       .header {
-        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        background: linear-gradient(135deg, #235c63 0%, #235c63 100%);
         padding: 40px 30px;
         text-align: center;
         color: white;
@@ -194,49 +194,88 @@
   <body>
     <div class="card-container">
       <div class="header">
-        <div class="profile-img">👤</div>
-        <div class="name">Your Name</div>
-        <div class="title">Your Title / Position</div>
+        <div class="profile-img">
+          <img
+            src="./public/logo.svg"
+            alt="Profile Picture"
+            style="
+              width: 100%;
+              height: 100%;
+              border-radius: 50%;
+              object-fit: cover;
+            "
+          />
+        </div>
       </div>
 
       <div class="content">
         <div class="links-section">
-          <a href="tel:+1234567890" class="link-item">
-            <div class="link-icon">📞</div>
+          <a href="tel:+972592701910" class="link-item">
+            <div class="link-icon">
+              <img
+                src="./public/phone.svg"
+                alt="Phone"
+                style="width: 24px; height: 24px"
+              />
+            </div>
             <div class="link-text">Call Me</div>
           </a>
 
-          <a href="mailto:your.email@example.com" class="link-item">
-            <div class="link-icon">📧</div>
-            <div class="link-text">Email Me</div>
-          </a>
-
-          <a href="https://wa.me/972592701910" target="_blank" class="link-item">
-            <div class="link-icon">💬</div>
+          <a
+            href="https://wa.me/972592701910"
+            target="_blank"
+            class="link-item"
+          >
+            <div class="link-icon">
+              <img
+                src="./public/whatsApp.svg"
+                alt="WhatsApp"
+                style="width: 24px; height: 24px"
+              />
+            </div>
             <div class="link-text">WhatsApp</div>
           </a>
 
-          <a
-            href="https://linkedin.com/in/yourprofile"
-            target="_blank"
-            class="link-item"
-          >
-            <div class="link-icon">💼</div>
-            <div class="link-text">LinkedIn</div>
-          </a>
-
-          <a href="https://yourwebsite.com" target="_blank" class="link-item">
-            <div class="link-icon">🌐</div>
-            <div class="link-text">Website</div>
+          <a href="https://www.tiktok.com/@organza.tulkarm" target="_blank" class="link-item">
+            <div class="link-icon">
+              <img
+                src="./public/tiktok.svg"
+                alt="TikTok"
+                style="width: 24px; height: 24px"
+              />
+            </div>
+            <div class="link-text">TikTok</div>
           </a>
 
           <a
-            href="https://instagram.com/yourprofile"
+            href="https://www.instagram.com/organza.tulkarm"
             target="_blank"
             class="link-item"
           >
-            <div class="link-icon">📸</div>
+            <div class="link-icon">
+              <img
+                src="./public/instagram.svg"
+                alt="Instagram"
+                style="width: 24px; height: 24px"
+              />
+            </div>
             <div class="link-text">Instagram</div>
+          </a>
+        </div>
+
+        <a
+            href="https://www.facebook.com/organzmoda"
+            target="_blank"
+            class="link-item"
+          >
+            <div class="link-icon">
+              <img
+                src="./public/facebook.svg"
+                alt="Facebook"
+                style="width: 24px; height: 24px"
+              />
+            </div>
+            <div class="link-text">Facebook</div>
           </a>
         </div>
 
@@ -244,12 +283,14 @@
           <div class="section-title">📍 Find Us Here</div>
           <div class="map-container">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.019284820823!2d-122.41941708468208!3d37.77492977975903!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085809c6c8f4459%3A0xb10ed6d9b5050fa5!2sTwitter%20HQ!5e0!3m2!1sen!2sus!4v1234567890123!5m2!1sen!2sus"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3371.7806418439204!2d35.02585007578085!3d32.317746473858854!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x151d177146975d2f%3A0x5ffa2cfd98d5efe8!2sOrganza!5e0!3m2!1sen!2s!4v1765490957961!5m2!1sen!2s"
+              width="600"
+              height="450"
+              style="border: 0"
               allowfullscreen=""
               loading="lazy"
               referrerpolicy="no-referrer-when-downgrade"
-            >
-            </iframe>
+            ></iframe>
           </div>
         </div>
       </div>
